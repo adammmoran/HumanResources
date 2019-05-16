@@ -27,7 +27,7 @@ public class Person {
     private Position position;
     @ManyToOne(
             fetch = FetchType.EAGER,
-            cascade = CascadeType.ALL
+            cascade = CascadeType.DETACH
     )
     private Project project;
 }

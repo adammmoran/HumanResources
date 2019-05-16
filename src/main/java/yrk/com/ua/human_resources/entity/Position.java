@@ -24,13 +24,13 @@ public class Position {
     @JsonIgnore
     @ManyToOne(
             fetch = FetchType.EAGER,
-            cascade = CascadeType.ALL
+            cascade = CascadeType.DETACH
     )
     private Department department;
     @JsonIgnore
     @OneToMany(
             fetch = FetchType.EAGER,
-            cascade = CascadeType.REMOVE,
+            cascade = CascadeType.DETACH,
             mappedBy = "position"
     )
     private List<Person> people;

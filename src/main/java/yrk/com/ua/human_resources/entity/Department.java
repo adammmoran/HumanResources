@@ -23,8 +23,8 @@ public class Department {
     @Enumerated(EnumType.STRING)
     private City city;
     @OneToMany(
-            fetch = FetchType.LAZY,
-            cascade = CascadeType.ALL,
+            fetch = FetchType.EAGER,
+            cascade = CascadeType.DETACH,
             mappedBy = "department"
     )
     private List<Position> positions;
