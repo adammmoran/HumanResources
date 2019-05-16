@@ -23,18 +23,18 @@ public class Department {
     @Enumerated(EnumType.STRING)
     private City city;
     @OneToMany(
-            fetch = FetchType.EAGER,
+            fetch = FetchType.LAZY,
             cascade = CascadeType.ALL,
             mappedBy = "department"
     )
     private List<Position> positions;
     private String description;
-    public void addPosition(Position position){
-        if(positions==null){
+
+    public void addPosition(Position position) {
+        if (positions == null) {
             positions = new ArrayList<>();
             positions.add(position);
-        }
-        else {
+        } else {
             positions.add(position);
         }
     }

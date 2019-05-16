@@ -2,14 +2,12 @@ package yrk.com.ua.human_resources.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import yrk.com.ua.human_resources.entity.City;
 import yrk.com.ua.human_resources.entity.Department;
 import yrk.com.ua.human_resources.entity.Position;
 import yrk.com.ua.human_resources.repository.DepartmentDAO;
 import yrk.com.ua.human_resources.service.DepartmentService;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class DepartmentServiceImpl implements DepartmentService {

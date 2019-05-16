@@ -27,9 +27,10 @@ public class Position {
             cascade = CascadeType.ALL
     )
     private Department department;
+    @JsonIgnore
     @OneToMany(
             fetch = FetchType.EAGER,
-            cascade = CascadeType.ALL,
+            cascade = CascadeType.REMOVE,
             mappedBy = "position"
     )
     private List<Person> people;

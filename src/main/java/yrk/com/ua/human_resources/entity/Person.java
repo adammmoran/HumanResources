@@ -22,7 +22,7 @@ public class Person {
     private String number;
     @ManyToOne(
             fetch = FetchType.EAGER,
-            cascade = CascadeType.ALL
+            cascade = CascadeType.DETACH
     )
     private Position position;
     @ManyToOne(

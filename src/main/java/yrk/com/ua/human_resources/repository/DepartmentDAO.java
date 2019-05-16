@@ -4,7 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import yrk.com.ua.human_resources.entity.City;
 import yrk.com.ua.human_resources.entity.Department;
 import yrk.com.ua.human_resources.entity.Position;
 

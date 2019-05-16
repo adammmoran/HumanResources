@@ -2,7 +2,6 @@ package yrk.com.ua.human_resources.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import yrk.com.ua.human_resources.entity.City;
 import yrk.com.ua.human_resources.entity.Department;
 import yrk.com.ua.human_resources.entity.Position;
 import yrk.com.ua.human_resources.service.DepartmentService;
@@ -38,7 +37,7 @@ public class DepartmentController {
     }
 
     @DeleteMapping("/api/department/delete/{id}")
-    public void deleteDepartmentById(@PathVariable("id")int id){
+    public void deleteDepartmentById(@PathVariable("id") int id) {
         departmentService.deleteDepartmentById(id);
     }
 
