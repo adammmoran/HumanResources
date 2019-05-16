@@ -45,15 +45,15 @@
     _curl -X PUT http://localhost:8080/api/project/update/{id} | json_
 * Delete department from DB:
 
-    _curl -X PUT http://localhost:8080/api/department/delete/{id} | json_
+    _curl -X Delete http://localhost:8080/api/department/delete/{id} | json_
 * Delete person from DB:
     
-    _curl -X PUT http://localhost:8080/api/person/delete/{id} | json_
+    _curl -X Delete http://localhost:8080/api/person/delete/{id} | json_
 * Delete position from DB:
 
-    _curl -X PUT http://localhost:8080/api/position/delete/{id} | json_
+    _curl -X Delete http://localhost:8080/api/position/delete/{id} | json_
 * Delete project from DB:
     
-    _curl -X PUT http://localhost:8080/api/project/delete/{id} | json_      
+    _curl -X Delete http://localhost:8080/api/project/delete/{id} | json_      
 * ...   
     
